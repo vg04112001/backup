@@ -1,0 +1,14 @@
+var fnm = "Abhishek";
+var lnm = "Pujara";
+var fullnm = fnm + " " + lnm;
+var numInt = 50;
+var numFloat = 42.50;
+var sumOfNum = numInt + numFloat;
+var isLogin = true;
+console.log("Firstname: " + fnm);
+console.log("Lastname: " + lnm);
+console.log("Fullname: " + fullnm);
+console.log("Integer Number: " + numInt);
+console.log("Float Number: " + numFloat);
+console.log("Sum: " + sumOfNum);
+console.log("Login Check: " + isLogin);

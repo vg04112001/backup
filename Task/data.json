@@ -1,0 +1,47 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "imgSrc": "public//assets/placeholder.png",
+      "title": "Sports Card",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "link": "Go to 1"
+    },
+    {
+      "id": "2",
+      "imgSrc": "public//assets/placeholder.png",
+      "title": "Library Card",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "link": "Go to 2"
+    },
+    {
+      "id": "3",
+      "imgSrc": "public//assets/placeholder.png",
+      "title": "PAN Card",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "link": "Go to 3"
+    },
+    {
+      "id": "4",
+      "imgSrc": "public//assets/placeholder.png",
+      "title": "Aadhar Card",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "link": "Go to 4"
+    },
+    {
+      "id": "5",
+      "imgSrc": "public//assets/placeholder.png",
+      "title": "Election Card",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "link": "Go to 5"
+    },
+    {
+      "id": "6",
+      "imgSrc": "public//assets/placeholder.png",
+      "title": "Debit Card",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "link": "Go to 6"
+    }
+  ]
+  
+}

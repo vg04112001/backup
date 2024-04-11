@@ -1,0 +1,29 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const cardContainer = document.getElementById("cardContainer");
+
+  fetch("data.json")
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+          return response.json();
+      })
+      .then(data => {
+          data.cardData.forEach(card => {
+              const cardDiv = document.createElement("div");
+              cardDiv.className = "d-flex justify-content-center col-lg-3 col-md-4 col-sm-6 mb-2";
+              cardDiv.innerHTML = `
+                  <div class="card" style="width: 18rem">
+                      <img src="${card.imgSrc}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">${card.title}</h5>
+                          <p class="card-text">${card.text}</p>
+                          <a href="#" class="btn btn-primary">${card.link}</a>
+                      </div>
+                  </div>
+              `;
+              cardContainer.appendChild(cardDiv);
+          });
+      })
+      .catch(error => console.error("Error fetching data:", error));
+});

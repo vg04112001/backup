@@ -1,0 +1,104 @@
+const handlerSubmit = (event: any) => {
+  event.preventDefault();
+
+  // Check email uniqueness
+  fetch("http://localhost:8000/data")
+      .then((response) => response.json())
+      .then((jsonData) => {
+          const existingUser = jsonData.find((user: any) => user.email === form.email);
+          if (existingUser) {
+              // Email already exists
+              const newEmail = prompt("Email is already in use. Please enter a different email:");
+              if (newEmail) {
+                console.log(newEmail)
+                  // User entered a new email, update form and submit
+                  setForm({ ...form, email: newEmail });
+                  // submitForm();
+              } else {
+                  // User canceled, do nothing or handle as needed
+              }
+          } else {
+              // Email is unique, proceed with submitting the form
+              submitForm();
+          }
+      })
+      .catch((error) => {
+          console.error("Error fetching existing data:", error);
+          // Handle error scenario
+      });
+};
+
+const submitForm = () => {
+  fetch("http://localhost:8000/data", {
+      method: "POST",
+      body: JSON.stringify(form),
+      headers: {
+          "Content-Type": "application/json",
+      }
+  }).then((response) => response.json())
+    .then(() => {
+        // Reset form after successful submission
+        setForm({
+            fname: "",
+            lname: "",
+            email: "",
+            subject: "",
+            message: "",
+        });
+
+        alert("Form submitted successfully!");
+    })
+    .catch((error) => {
+        console.error("Error submitting form:", error);
+        // Handle error scenario
+    });
+};
+
+
+
+
+
+
+
+
+
+
+
+  const handlerSubmit = (event: any) => {
+    event.preventDefault();
+
+    // Check email uniqueness
+    fetch("http://localhost:8000/data")
+        .then((response) => response.json())
+        .then((jsonData) => {
+            const existingEmails = jsonData.map((data: any) => data.email);
+            if (existingEmails.includes(form.email)) {
+                // Email already exists
+                alert("Email is already in use. Please use a different email.");
+            } else {
+                // Email is unique, proceed with form submission
+                fetch(`http://localhost:8000/data`, {
+                    method: "POST",
+                    body: JSON.stringify(form),
+                    headers: {
+                        "Content-Type": "application/json",
+                    }
+                }).then((response) => response.json());
+                
+                // Reset form after successful submission
+                setForm({
+                    fname: "",
+                    lname: "",
+                    email: "",
+                    subject: "",
+                    message: "",
+                });
+
+                alert("Form submitted successfully!");
+            }
+        })
+        .catch((error) => {
+            console.error("Error fetching existing data:", error);
+            // Handle error scenario
+        });
+};

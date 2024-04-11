@@ -1,0 +1,24 @@
+chrome setup
+nvm install
+
+
+any vs unknown:- https://levelup.gitconnected.com/typescript-difference-between-any-and-unknown-types-1fff4bf232a
+https://stackoverflow.com/questions/51439843/unknown-vs-any
+
+TS getters and setters
+https://www.typescripttutorial.net/typescript-tutorial/typescript-getters-setters/
+
+
+https://stackoverflow.com/questions/58796490/tsc-ps1-cannot-be-loaded-because-running-scripts-is-disabled-on-this-system
+
+https://stackoverflow.com/questions/56331371/i-want-to-hide-all-other-divs-when-i-click-on-one-div
+
+useRef over useState
+https://dev.to/trinityyi/when-to-use-useref-instead-of-usestate-3h4o
+
+
+react counter example with useRef
+increment and decrement counter example using useRef in reactjs ?
+
+
+when should I use useRef or useState in reactjs
